@@ -1,0 +1,13 @@
+body {
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1,h2,h3,h4,h5,p {
+  color: #313131;
+}
+
+.color-red {
+  color: #d42e1f;
+}
+
+
