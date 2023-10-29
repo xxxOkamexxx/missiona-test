@@ -1,3 +1,6 @@
+/* #2bff70 */
+/* #00C75E */
+
 body {
   margin: 0 auto;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,8 +9,58 @@ h1,h2,h3,h4,h5,p {
   color: #313131;
 }
 
+p,button{
+  font-size: 1.5rem;
+}
+
 .color-red {
   color: #d42e1f;
 }
 
+.btn {
+  background-color: #00C75E;
+  color: white;
+  padding: 1em 1.5em;
+  border: none;
+  border-radius: 2em;
+  white-space: nowrap;
+  height: auto;
+  vertical-align: bottom;
+}
 
+.relative {
+  position: relative;
+  top: 1em;
+}
+
+.absolute {
+  position: absolute;
+  top: 21px;
+  left: 50%;
+}
+
+.d_flex {
+  display: flex;
+}
+
+.fix-top {
+  position: fixed;
+  top: 0.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 94.667%;
+  max-width: 706px;
+  z-index: 10;
+}
+
+.fix-top div {
+  width: auto;
+}
+
+.header_button{
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
