@@ -1,5 +1,7 @@
 /* #2bff70 */
 /* #00C75E */
+/* f0f5f7 */
+/* d42e1f */
 
 body {
   margin: 0 auto;
@@ -10,7 +12,12 @@ h1,h2,h3,h4,h5,p {
 }
 
 p,button{
-  font-size: 1.5rem;
+  font-size: 3vmin;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
 }
 
 .color-red {
@@ -18,8 +25,8 @@ p,button{
 }
 
 .btn {
+  width: auto;
   background-color: #00C75E;
-  color: white;
   padding: 1em 1.5em;
   border: none;
   border-radius: 2em;
@@ -27,6 +34,16 @@ p,button{
   max-width: 100%;
   height: auto;
   display: flex;
+}
+
+.btn:hover{
+  background-color: #2bff70;
+}
+
+.btn a {
+  display: flex;
+  text-decoration: none;
+  color: white;
 }
 
 .arrow {
@@ -38,22 +55,20 @@ p,button{
   display: flex;
 }
 
+/* header */
 .fix-top {
+  margin: 1em 0 0 auto;
   position: fixed;
-  top: 0.8%;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
-  max-width: 706px;
   z-index: 10;
 }
 
 .fix-top div {
-  width: auto;
+  margin: auto;
+  width: 50vw;
 }
 
 .header_container {
-  width: 70vw;
   padding: 1em 1em;
   border-radius: 3.5em;
   background-color: white;
@@ -68,9 +83,50 @@ p,button{
   height: auto;
 }
 
+section {
+  width: 70vw;
+  margin: auto;
+}
+/* heroイメージ */
 
-@media (max-width: 999px) {
-  p,button {
-  font-size: 0.75em;
+.hero img {
+  margin: auto;
+  margin-top: 7em;
+  width: 100%;
+}
+
+
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: blue;
   }
+  /* p,button {
+    font-size: 1em;
+    } */
+  
+    .fix-top div {
+      margin: auto;
+      width: 70vw;
+    }
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: olive;
+  }
+
+  /* p,button {
+    font-size: 1em;
+    } */
+  
+    .fix-top div {
+      margin: auto;
+      width: 90vw;
+    }
+}
+
+@media (max-width: 450px) {
+  
   }
