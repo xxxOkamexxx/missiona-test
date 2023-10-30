@@ -10,19 +10,24 @@ body {
   overflow-x: hidden;
 }
 
-.mt-3 {
-  margin-top: 3em;
+.mt-2 {
+  margin-top: 2em;
+}
+
+.mt-sm {
+  margin-top: 0.2em;
+}
+
+.mb-0 {
+  margin-bottom: 0;
 }
 
 h1,h2,h3,h4,h5,p {
   color: #313131;
 }
 
-button{
-  font-size: 3vmin;
-}
 
-
+/* text style */
 .underline {
   text-decoration: underline;
   text-underline-offset: 0.5em;
@@ -34,6 +39,11 @@ button{
 
 .color-white {
   color: white;
+}
+
+/* button */
+button{
+  font-size: 4vmin;
 }
 
 .btn {
@@ -108,7 +118,7 @@ section .section-container {
 
 .w-70 {
   width: 70%;
-  padding: 1em;
+  padding: 0 1em;
 }
  
 .img-container img {
@@ -131,11 +141,18 @@ section .section-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.header_logo_wrapper {
+  width: 40% !important;
+  margin-left: 2em !important;
+  margin-right: 1em !important;
+}
+
 .header_logo{
-  margin: auto;
-  margin-left: 1em;
+  width: 40% !important;
+  margin-left: 2em !important;
+  margin-right: 1em !important;
   display: inline-block;
-  width: 40%;
+  width: 100%;
   height: auto;
 }
 
@@ -198,6 +215,14 @@ section .bg-red {
 
     section .section-container {
       margin: auto;
+      width: 90%;
+    }
+
+    section .bg-red {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
   
     .fix-top div {
