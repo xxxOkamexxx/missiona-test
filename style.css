@@ -24,19 +24,14 @@ p,button{
   border: none;
   border-radius: 2em;
   white-space: nowrap;
+  max-width: 100%;
   height: auto;
-  vertical-align: bottom;
+  display: flex;
 }
 
-.relative {
-  position: relative;
-  top: 1em;
-}
-
-.absolute {
-  position: absolute;
-  top: 21px;
-  left: 50%;
+.arrow {
+  height: 1.5em;
+  margin-left: 1em;
 }
 
 .d_flex {
@@ -48,7 +43,7 @@ p,button{
   top: 0.8%;
   left: 50%;
   transform: translateX(-50%);
-  width: 94.667%;
+  width: 100%;
   max-width: 706px;
   z-index: 10;
 }
@@ -57,10 +52,25 @@ p,button{
   width: auto;
 }
 
-.header_button{
-  margin: auto;
-  display: inline-block;
-  width: 100%;
-  height: auto;
-  vertical-align: bottom;
+.header_container {
+  width: 70vw;
+  padding: 1em 1em;
+  border-radius: 3.5em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+.header_logo{
+  margin: auto;
+  margin-left: 1em;
+  display: inline-block;
+  width: 40%;
+  height: auto;
+}
+
+
+@media (max-width: 999px) {
+  p,button {
+  font-size: 0.75em;
+  }
+  }
